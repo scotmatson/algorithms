@@ -1,8 +1,16 @@
 import java.util.Arrays;
 import java.util.Random;
 
+/*
+ * Time Complexity:
+ *     Omega(n^2)
+ *     Theta(n^2)
+ *     0(n^2)
+ *
+ * Space Complexity:
+ *     0(1)
+ */
 class SelectionSort {
-
     public static void main(String[] args) {
         Random rand = new Random();
         int[] nums = new int[20];
@@ -14,15 +22,6 @@ class SelectionSort {
         sort1(nums);
     }
 
-    /*
-     * Time Complexity:
-     *     Omega(n^2)
-     *     Theta(n^2)
-     *     0(n^2)
-     *
-     * Space Complexity:
-     *     0(1)
-     */
     public static void sort1(int[] arr) {
         System.out.println("Unsorted: " + Arrays.toString(arr));
 
@@ -47,4 +46,3 @@ class SelectionSort {
         arr[right] = temp;
     }
 }
-
