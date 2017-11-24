@@ -26,10 +26,8 @@ class InsertionSort {
     public static void sort(int[] arr) {
         System.out.println("Unsorted: " + Arrays.toString(arr));
         for (int i = 1; i < arr.length; ++i) {
-            for (int j = 0; j < i; ++j) {
-                if (arr[i] < arr[j]) {
-                    swap(arr, i, j);
-                }
+            for (int j = i; j > 0 && arr[j-1] > arr[j]; --j) {
+                swap(arr, j-1, j);
             }
         }
         System.out.println("Sorted: " + Arrays.toString(arr));
