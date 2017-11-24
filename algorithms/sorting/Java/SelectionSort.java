@@ -4,11 +4,10 @@ import java.util.Random;
 class SelectionSort {
 
     public static void main(String[] args) {
-
         Random rand = new Random();
-        int[] nums = new int[100];
+        int[] nums = new int[20];
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < nums.length; i++) {
             nums[i] = rand.nextInt(101);
         }
 
