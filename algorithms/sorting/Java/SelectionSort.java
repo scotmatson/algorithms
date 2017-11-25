@@ -19,10 +19,10 @@ class SelectionSort {
             nums[i] = rand.nextInt(101);
         }
 
-        sort1(nums);
+        sort(nums);
     }
 
-    public static void sort1(int[] arr) {
+    public static void sort(int[] arr) {
         System.out.println("Unsorted: " + Arrays.toString(arr));
 
         for (int i = 0; i < arr.length; ++i) {
